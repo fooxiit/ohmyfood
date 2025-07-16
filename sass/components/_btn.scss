@@ -1,0 +1,17 @@
+@use "../abstracts/abstracts";
+
+.btn{
+    height: 3.125rem;
+    font-size: 1rem;
+    text-align: center;
+    background: linear-gradient(193.33deg, abstracts.$primary -11.44%, abstracts.$secondary 123.93%);
+    color: white;
+    border: none;
+    border-radius: 1.5625rem;
+    &--large{
+        width: 13.625rem;
+    }
+    &--small{
+         width: 11.625rem;
+    }
+}

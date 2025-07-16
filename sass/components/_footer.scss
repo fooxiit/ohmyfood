@@ -1,0 +1,19 @@
+@use "../abstracts/abstracts";
+footer{
+    padding: 1.375rem 1.5625rem;
+    background: #353535;
+;
+    & img{
+        height: 1.6875rem;
+        width: 8.6875rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+    & ul li{
+        font-size: 1rem;
+        color: white;
+        & i{
+            margin-right: 0.6875rem;
+        }
+    }
+}

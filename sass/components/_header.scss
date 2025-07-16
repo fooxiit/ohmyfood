@@ -1,0 +1,32 @@
+@use "../abstracts/abstracts";
+
+header{
+    width: 100%;
+    & .logo{
+        width: 100%;
+        height: 3.9375rem;
+        & img{
+            width: 23.4375rem;
+            height: 2.625rem;
+        }
+    }
+}
+
+.location{
+    background:  abstracts.$grey;
+    box-shadow: 0 4px 4px abstracts.$shadow;
+    color: abstracts.$grey-font;
+    gap: 1.0625rem;
+    width: 100%;
+    height: 3.125rem;
+    & span{
+        font-size: 1rem;
+    }
+    & i{
+        width: 0.75rem;
+        height: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+}
+
