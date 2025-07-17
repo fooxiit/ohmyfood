@@ -1,0 +1,19 @@
+.item{
+    padding: 13.5px 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+    &__text{
+        & h3{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        & span{
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+    &__price{
+        justify-content: end;
+    }
+}
