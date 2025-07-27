@@ -168,25 +168,61 @@ footer ul li i {
   background: white;
   border-radius: 15px;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  position: relative;
+  transition: all 250ms;
+  overflow: hidden;
+}
+.item__text {
+  flex-shrink: 1;
+  flex-basis: content;
+  margin-right: 5px;
+  overflow: hidden;
 }
 .item__text h3 {
   font-size: 18px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .item__text span {
+  display: block;
   font-size: 15px;
   font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .item__price {
   justify-content: end;
 }
 .item:hover .item__selected {
-  width: 10px;
+  width: 59px;
+  transition: all 250ms;
+}
+.item:hover .item__price {
+  margin-right: 60px;
+  transition: all 250ms;
 }
 .item__selected {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
   width: 0%;
+  /* width: 59px; */
   background: #99E2D0;
   overflow: hidden;
+  border-radius: 0 15px 15px 0;
+}
+.item__selected i {
+  align-content: center;
+  text-align: center;
+  color: #99E2D0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
 }
 
 .like-icon {

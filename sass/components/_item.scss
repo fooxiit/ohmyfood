@@ -1,19 +1,66 @@
+@use "../abstracts/abstracts";
 .item{
     padding: 13.5px 15px;
     background: white;
     border-radius: 15px;
     box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+    position: relative;
+    transition: all 250ms;
+    overflow: hidden;
     &__text{
+        flex-shrink: 1;
+        flex-basis: content;
+        margin-right: 5px;
+        overflow: hidden;
         & h3{
             font-size: 18px;
             font-weight: 500;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
         & span{
+            display: block;
             font-size: 15px;
             font-weight: 300;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     }
     &__price{
         justify-content: end;
     }
+    &:hover{
+        & .item__selected{
+            width: 59px;
+            transition: all 250ms;
+        }
+        & .item__price{
+            margin-right: 60px;
+            transition: all 250ms;
+        }
+    }
+    &__selected{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        width: 0%;
+        /* width: 59px; */
+        background: abstracts.$green;
+        overflow: hidden;
+        border-radius: 0 15px 15px 0;
+        & i{
+            align-content: center;
+            text-align: center;
+            color: abstracts.$green;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: white;
+        }
+    }
+
 }
+
