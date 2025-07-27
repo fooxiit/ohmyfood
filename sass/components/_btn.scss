@@ -1,6 +1,7 @@
 @use "../abstracts/abstracts";
 
 .btn{
+    position: relative;
     height: 3.125rem;
     font-size: 1rem;
     text-align: center;
@@ -8,10 +9,29 @@
     color: white;
     border: none;
     border-radius: 1.5625rem;
+    box-shadow: 0px 4px 10px 0px #00000040;
     &--large{
         width: 13.625rem;
     }
     &--small{
          width: 11.625rem;
+    }
+    &::after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        opacity: 0;
+        box-shadow: 0px 4px 20px 0px #00000040;
+        background: #ffffff1f;
+        border-radius: 1.5625rem;
+        transition: all 400ms;
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
     }
 }

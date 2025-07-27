@@ -79,15 +79,9 @@ a, a:visited, a:hover, a:active {
   font-size: 1.0625rem;
   font-weight: lighter;
 }
-.card__content i {
-  clip-path: url("assets/img/icon/Like.svg");
-}
-.card__content i img {
-  height: 21px;
-  width: 22px;
-}
 
 .btn {
+  position: relative;
   height: 3.125rem;
   font-size: 1rem;
   text-align: center;
@@ -95,12 +89,29 @@ a, a:visited, a:hover, a:active {
   color: white;
   border: none;
   border-radius: 1.5625rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .btn--large {
   width: 13.625rem;
 }
 .btn--small {
   width: 11.625rem;
+}
+.btn::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  opacity: 0;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2509803922);
+  background: rgba(255, 255, 255, 0.1215686275);
+  border-radius: 1.5625rem;
+  transition: all 400ms;
+}
+.btn:hover::after {
+  opacity: 1;
 }
 
 header {
@@ -168,6 +179,39 @@ footer ul li i {
 }
 .item__price {
   justify-content: end;
+}
+.item:hover .item__selected {
+  width: 10px;
+}
+.item__selected {
+  width: 0%;
+  background: #99E2D0;
+  overflow: hidden;
+}
+
+.like-icon {
+  position: relative;
+  height: 21px;
+  width: 22px;
+  clip-path: url("../../assets/img/icon/Like.svg");
+}
+.like-icon img {
+  height: 100%;
+  width: 100%;
+}
+.like-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../../assets/img/icon/Like.svg);
+  opacity: 0;
+  transition: all 400ms;
+}
+.like-icon:hover::after {
+  opacity: 1;
 }
 
 .healine {
