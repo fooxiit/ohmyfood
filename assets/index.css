@@ -142,6 +142,7 @@ footer img {
   width: 8.6875rem;
   margin-bottom: 1rem;
   color: white;
+  filter: invert(1);
 }
 footer ul li {
   font-size: 1rem;
@@ -231,17 +232,72 @@ footer ul li i {
   font-size: 1rem;
 }
 
-.restaurant {
+.restaurants {
   padding: 2.6875rem 1.125rem 1.8125rem 1.125rem;
   margin-bottom: 2.3125rem;
 }
-.restaurant h2 {
+.restaurants h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 1.5625rem 0.1875rem;
 }
-.restaurant__cards {
+.restaurants__cards {
   gap: 1.125rem;
+}
+
+.restaurant {
+  margin-top: 220px;
+  background: #F6F6F6;
+  border-radius: 40px;
+  gap: 40px;
+  padding: 32px 13px 40px 13px;
+  position: relative;
+  align-items: center;
+}
+.restaurant__title {
+  align-items: center;
+}
+.restaurant__title h1 {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+}
+.restaurant__title i {
+  height: 21px;
+  width: 22px;
+  margin-right: 28px;
+}
+.restaurant__img {
+  position: absolute;
+  top: -220px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 275px;
+  z-index: -1;
+}
+.restaurant__img img {
+  width: 100%;
+  height: 100%;
+}
+.restaurant__items {
+  gap: 12px;
+}
+.restaurant h2 {
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.restaurant h2::after {
+  content: "";
+  width: 40px;
+  border-bottom: solid 3px #99E2D0;
+  display: block;
+  margin-top: 10px;
+}
+.restaurant section {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
