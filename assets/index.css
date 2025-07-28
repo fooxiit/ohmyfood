@@ -134,6 +134,11 @@ header .logo img {
   width: 100%;
   height: 3.125rem;
 }
+@media screen and (min-width: 780px) {
+  .location {
+    box-shadow: none;
+  }
+}
 .location span {
   font-size: 1rem;
 }
@@ -255,22 +260,42 @@ footer ul li i {
   width: 100%;
   text-align: center;
 }
+@media screen and (min-width: 780px) {
+  .healine {
+    padding: 1.875rem 0;
+  }
+}
 .healine h1 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 2.4375rem 2rem 0 0.75rem;
+}
+@media screen and (min-width: 780px) {
+  .healine h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1.125rem 0;
+  }
 }
 .healine p {
   font-size: 1.125rem;
   font-weight: lighter;
   margin: 0 0 1.6875rem 0;
 }
+@media screen and (min-width: 780px) {
+  .healine p {
+    margin: 0;
+  }
+}
 .healine .btn {
   margin: 0 auto;
 }
+@media screen and (min-width: 780px) {
+  .healine .btn {
+    margin: 1.125rem auto 0 auto;
+  }
+}
 
 .how-to-use {
-  height: 27.5rem;
   width: 100%;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: white;
@@ -282,6 +307,11 @@ footer ul li i {
 .how-to-use__steps {
   gap: 1.5625rem;
 }
+@media screen and (min-width: 950px) {
+  .how-to-use__steps {
+    flex-direction: row;
+  }
+}
 .how-to-use__steps__step {
   background: #F6F6F6;
   border-radius: 1.25rem;
@@ -290,6 +320,8 @@ footer ul li i {
   height: 4.5187rem;
   padding: 1.7813rem 2.375rem 1.7813rem 2.1563rem;
   position: relative;
+  max-width: 322px;
+  min-width: 282px;
 }
 .how-to-use__steps__step__number {
   font-size: 0.9063rem;
