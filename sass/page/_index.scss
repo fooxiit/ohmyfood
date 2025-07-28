@@ -65,6 +65,9 @@
 .restaurants{
     padding: 2.6875rem 1.125rem 1.8125rem 1.125rem;
     margin-bottom: 2.3125rem;
+    @media screen and (min-width: 1000px) {
+        padding: 2.6875rem 12.5% 1.8125rem 12.5%;
+    }
     & h2{
         font-size: 1.5rem;
         font-weight: bold;
@@ -72,5 +75,25 @@
     }
     &__cards{
         gap: 1.125rem;
+        align-items: center;
+        &__contenaire{
+            max-width: 490px;
+            width: 100%;
+        }
+        @media screen and (min-width: 780px) {
+            justify-content: center;
+            align-content: space-between;
+            align-items: start;
+            gap: 0 6.5%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            &__contenaire{
+                &:first-child{
+                    margin-bottom: 4.63%;
+                }
+                width: calc(50% - 3.25%);
+            }
+        }
     }
 }

@@ -316,6 +316,11 @@ footer ul li i {
   padding: 2.6875rem 1.125rem 1.8125rem 1.125rem;
   margin-bottom: 2.3125rem;
 }
+@media screen and (min-width: 1000px) {
+  .restaurants {
+    padding: 2.6875rem 12.5% 1.8125rem 12.5%;
+  }
+}
 .restaurants h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -323,6 +328,27 @@ footer ul li i {
 }
 .restaurants__cards {
   gap: 1.125rem;
+  align-items: center;
+}
+.restaurants__cards__contenaire {
+  max-width: 490px;
+  width: 100%;
+}
+@media screen and (min-width: 780px) {
+  .restaurants__cards {
+    justify-content: center;
+    align-content: space-between;
+    align-items: start;
+    gap: 0 6.5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants__cards__contenaire {
+    width: 46.75%;
+  }
+  .restaurants__cards__contenaire:first-child {
+    margin-bottom: 4.63%;
+  }
 }
 
 .restaurant {
