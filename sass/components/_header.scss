@@ -1,6 +1,9 @@
 @use "../abstracts/abstracts";
 
 header{
+    background: white;
+    position: relative;
+    z-index: 1;
     width: 100%;
     & .logo{
         width: 100%;
