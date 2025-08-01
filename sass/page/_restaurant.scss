@@ -23,6 +23,11 @@
         &__starters,&__main-course,&__deserts{
             max-width: 634px;
             width: 100%;
+            @for $i from 1 through 5{
+                & :nth-child(1n + #{$i}).item{
+                    animation: slidein 800ms ease 1 100ms*$i forwards;
+                }
+            }
         }
         @media screen and (min-width:635px) {
             padding: 51px 0 30px 0;
@@ -67,6 +72,10 @@
     &__items{
         width: 100%;
         gap: 12px;
+        & .item{
+            transform-origin: left;
+            transform: scaleX(0);
+        }
     }
     & h2{
         font-size: 22px;
@@ -82,4 +91,14 @@
         }
     }
     
+}
+
+
+@keyframes slidein {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
 }

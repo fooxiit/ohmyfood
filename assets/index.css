@@ -416,6 +416,21 @@ footer ul li i {
   max-width: 634px;
   width: 100%;
 }
+.restaurant__menu__starters :nth-child(1n+1).item, .restaurant__menu__main-course :nth-child(1n+1).item, .restaurant__menu__deserts :nth-child(1n+1).item {
+  animation: slidein 800ms ease 1 100ms forwards;
+}
+.restaurant__menu__starters :nth-child(1n+2).item, .restaurant__menu__main-course :nth-child(1n+2).item, .restaurant__menu__deserts :nth-child(1n+2).item {
+  animation: slidein 800ms ease 1 200ms forwards;
+}
+.restaurant__menu__starters :nth-child(1n+3).item, .restaurant__menu__main-course :nth-child(1n+3).item, .restaurant__menu__deserts :nth-child(1n+3).item {
+  animation: slidein 800ms ease 1 300ms forwards;
+}
+.restaurant__menu__starters :nth-child(1n+4).item, .restaurant__menu__main-course :nth-child(1n+4).item, .restaurant__menu__deserts :nth-child(1n+4).item {
+  animation: slidein 800ms ease 1 400ms forwards;
+}
+.restaurant__menu__starters :nth-child(1n+5).item, .restaurant__menu__main-course :nth-child(1n+5).item, .restaurant__menu__deserts :nth-child(1n+5).item {
+  animation: slidein 800ms ease 1 500ms forwards;
+}
 @media screen and (min-width: 635px) {
   .restaurant__menu {
     padding: 51px 0 30px 0;
@@ -465,6 +480,10 @@ footer ul li i {
   width: 100%;
   gap: 12px;
 }
+.restaurant__items .item {
+  transform-origin: left;
+  transform: scaleX(0);
+}
 .restaurant h2 {
   font-size: 22px;
   font-weight: 300;
@@ -477,6 +496,15 @@ footer ul li i {
   border-bottom: solid 3px #99E2D0;
   display: block;
   margin-top: 10px;
+}
+
+@keyframes slidein {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
