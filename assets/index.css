@@ -121,10 +121,17 @@ header {
   width: 100%;
 }
 header .logo {
+  padding-left: 17px;
+  justify-content: space-between;
   width: 100%;
   height: 3.9375rem;
 }
+header .logo i {
+  width: 17px;
+  height: 16px;
+}
 header .logo img {
+  margin: auto;
   width: 23.4375rem;
   height: 2.625rem;
 }
