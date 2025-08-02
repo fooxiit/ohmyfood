@@ -156,12 +156,34 @@ footer {
   padding: 1.375rem 1.5625rem;
   background: #353535;
 }
+@media screen and (min-width: 840px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    padding: 3.5625rem 1.5625rem 1.875rem 1.5625rem;
+  }
+}
 footer img {
   height: 1.6875rem;
   width: 8.6875rem;
   margin-bottom: 1rem;
   color: white;
   filter: invert(1);
+}
+footer ul {
+  gap: 7px;
+}
+@media screen and (min-width: 840px) {
+  footer ul {
+     flex-direction: row !important;
+  }
+  footer ul > :nth-child(-n+2) {
+    min-width: 190px;
+  }
+  footer ul > :nth-child(2n+2) {
+    min-width: 130px;
+  }
 }
 footer ul li {
   font-size: 1rem;
@@ -260,6 +282,78 @@ footer ul li i {
   opacity: 1;
 }
 
+@property --avanced {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --avanced-reverse {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+.loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: white;
+  flex-wrap: wrap;
+  animation: loading-fadeout 3s forwards;
+  align-content: center;
+  padding: 10px;
+}
+.loading span {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.loading__logo {
+  animation: loading-animation ease-out 3.5s forwards;
+  width: 100%;
+  text-align: center;
+  font-family: Shrikhand;
+  font-size: 50px;
+  font-weight: bold;
+  color: transparent;
+  background-image: linear-gradient(to left, transparent var(--avanced), #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+}
+
+body > :not(.loading) .animation-warpper {
+  height: 0;
+  overflow: hidden;
+  animation: show-animation 0s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes loading-animation {
+  from {
+    --avanced: 100% ;
+  }
+  to {
+    --avanced: 0% ;
+  }
+}
+@keyframes loading-fadeout {
+  from {
+    display: inherit;
+  }
+  to {
+    display: none;
+  }
+}
+@keyframes show-animation {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
 .healine {
   padding: 2.4375rem 1.625rem 3.5625rem 2.125rem;
   width: 100%;

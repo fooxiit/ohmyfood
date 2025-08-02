@@ -1,0 +1,77 @@
+@use "../abstracts/abstracts";
+@property --avanced{
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%;
+}@property --avanced-reverse{
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%;
+}
+.loading{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: white;
+    flex-wrap: wrap;
+    animation: loading-fadeout 3s forwards;
+    align-content: center;
+    padding: 10px;
+    & span{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+    &__logo{
+        animation: loading-animation ease-out 3.5s forwards;
+        width: 100%;
+        text-align: center;
+        font-family: Shrikhand;
+        font-size: 50px;
+        font-weight: bold;
+        color: transparent;
+        background-image: linear-gradient(to left, transparent var(--avanced) , abstracts.$primary -11.44%, abstracts.$secondary 123.93%);
+        background-clip: text;
+    }
+}
+
+
+body >:not(.loading) .animation-warpper{
+    height: 0;
+    overflow: hidden;
+    animation: show-animation 0s forwards;
+    animation-delay: 3s ;
+}
+
+
+@keyframes loading-animation {
+    from{
+        --avanced : 100%
+    }
+    to{
+        --avanced : 0%
+    }
+}
+
+@keyframes loading-fadeout {
+    from{
+        display: inherit; 
+        
+    }
+    to{
+        display: none; 
+    }
+}
+
+@keyframes show-animation {
+    from{
+        height: 0; 
+    }
+    to{
+        height: 100%;
+    }
+}
