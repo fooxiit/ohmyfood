@@ -2,7 +2,7 @@
 @property --avanced{
     syntax: "<percentage>";
     inherits: false;
-    initial-value: 100%;
+    initial-value: 97%;
 }@property --avanced-reverse{
     syntax: "<percentage>";
     inherits: false;
@@ -40,17 +40,18 @@
 }
 
 
-body >:not(.loading) .animation-warpper{
+.animation-warpper{
     height: 0;
     overflow: hidden;
     animation: show-animation 0s forwards;
     animation-delay: 3s ;
+    
 }
 
 
 @keyframes loading-animation {
     from{
-        --avanced : 100%
+        --avanced : 97%
     }
     to{
         --avanced : 0%
