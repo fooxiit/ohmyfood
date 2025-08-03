@@ -450,8 +450,9 @@ footer .footer__link-list li i {
   margin-right: 1.25rem;
   color: #7E7E7E;
 }
-.how-to-use__steps__step span {
+.how-to-use__steps__step h4 {
   font-size: 1rem;
+  display: inline;
 }
 
 .restaurants {
