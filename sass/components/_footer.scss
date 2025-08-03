@@ -16,10 +16,10 @@ footer{
         color: white;
         filter: invert(1);
     }
-    & ul{
+    & .footer__link-list{
         gap: 7px;
          @media screen and (min-width: 840px) {
-            flex-direction: row;
+            flex-direction: row ; 
             &> :nth-child(-n+2){
                 min-width: 190px;
             }
