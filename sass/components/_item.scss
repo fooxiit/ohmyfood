@@ -1,21 +1,21 @@
 @use "../abstracts/abstracts";
 .item{
-    padding: 13.5px 15px;
+    padding: 0.8438rem 0.9375rem;
     background: white;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     width: 100%;
-    max-width: 634px;
-    box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+    max-width: 39.625rem;
+    box-shadow: 0rem 0.2506rem 0.94rem 0rem #0000001A;
     position: relative;
     transition: all 250ms;
     overflow: hidden;
     &__text{
         flex-shrink: 1;
         flex-basis: content;
-        margin-right: 5px;
+        margin-right: 0.3125rem;
         overflow: hidden;
         & h3{
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 500;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -23,7 +23,7 @@
         }
         & span{
             display: block;
-            font-size: 15px;
+            font-size: 0.9375rem;
             font-weight: 300;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -35,11 +35,11 @@
     }
     &:hover{
         & .item__selected{
-            width: 59px;
+            width: 3.6875rem;
             transition: all 250ms;
         }
         & .item__price{
-            margin-right: 60px;
+            margin-right: 3.75rem;
             transition: all 250ms;
         }
     }
@@ -47,18 +47,18 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        right: 0px;
+        right: 0rem;
         width: 0%;
-        /* width: 59px; */
+        /* width: 3.6875rem; */
         background: abstracts.$green;
         overflow: hidden;
-        border-radius: 0 15px 15px 0;
+        border-radius: 0 0.9375rem 0.9375rem 0;
         & i{
             align-content: center;
             text-align: center;
             color: abstracts.$green;
-            width: 20px;
-            height: 20px;
+            width: 1.25rem;
+            height: 1.25rem;
             border-radius: 50%;
             background: white;
         }

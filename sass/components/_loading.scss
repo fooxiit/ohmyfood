@@ -19,11 +19,11 @@
     flex-wrap: wrap;
     animation: loading-fadeout 3s forwards;
     align-content: center;
-    padding: 10px;
+    padding: 0.625rem;
     & span{
         width: 100%;
         text-align: center;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: lighter;
     }
     &__logo{
@@ -31,7 +31,7 @@
         width: 100%;
         text-align: center;
         font-family: Shrikhand;
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: bold;
         color: transparent;
         background-image: linear-gradient(to left, transparent var(--avanced) , abstracts.$primary -11.44%, abstracts.$secondary 123.93%);

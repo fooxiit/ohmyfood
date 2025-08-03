@@ -2,26 +2,26 @@
 
 .restaurant{
     position: relative;
-    margin-top: 220px;
+    margin-top: 13.75rem;
     width: 100%;
     align-items: center;
     background: white;
-    @media screen and (min-width:1055px) {
-            margin-top: 383px;
+    @media screen and (min-width:65.9375rem) {
+            margin-top: 23.9375rem;
     }
     &__menu{
         background: #F6F6F6;
-        border-radius: 40px;
-        gap: 40px;
-        padding: 32px 13px 40px 13px;
+        border-radius: 2.5rem;
+        gap: 2.5rem;
+        padding: 2rem 0.8125rem 2.5rem 0.8125rem;
         align-items: center;
         align-content: center;
         width: 100%;
-        max-width: 1055px;
+        max-width: 65.9375rem;
         width: 100%;
         z-index: 1;
         &__starters,&__main-course,&__deserts{
-            max-width: 634px;
+            max-width: 39.625rem;
             width: 100%;
             @for $i from 1 through 5{
                 & :nth-child(1n + #{$i}).item{
@@ -29,39 +29,39 @@
                 }
             }
         }
-        @media screen and (min-width:635px) {
-            padding: 51px 0 30px 0;
+        @media screen and (min-width:39.6875rem) {
+            padding: 3.1875rem 0 1.875rem 0;
         }
-        @media screen and (min-width:1055px) {
-            padding: 51px 0 30px 0;
+        @media screen and (min-width:65.9375rem) {
+            padding: 3.1875rem 0 1.875rem 0;
         }
     }
     &__title{
         width: max-content;
-        gap: 24px;
+        gap: 1.5rem;
         align-items: center;
         & h1{
             font-family: Shrikhand;
-            font-size: 28px;
+            font-size: 1.75rem;
             font-weight: 400;
         }
         & i{
-            height: 21px;
-            width: 22px;
-            margin-right: 28px;
+            height: 1.3125rem;
+            width: 1.375rem;
+            margin-right: 1.75rem;
         }
     }
     &__img{
         position: absolute;
-        top: -220px;
+        top: -13.75rem;
         left: 0;
         right: 0;
         width: 100%;
-        height: 275px;
+        height: 17.1875rem;
         z-index: 0;
-        @media screen and (min-width:1055px) {
-             height: 423px;
-             top: -383px;
+        @media screen and (min-width:65.9375rem) {
+             height: 26.4375rem;
+             top: -23.9375rem;
         }
         & img{
             width: 100%;
@@ -71,23 +71,23 @@
     }
     &__items{
         width: 100%;
-        gap: 12px;
+        gap: 0.75rem;
         & .item{
             transform-origin: left;
             transform: scaleX(0);
         }
     }
     & h2{
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 300;
         text-transform: uppercase;
-        margin-bottom: 12px;
+        margin-bottom: 0.75rem;
         &::after{
             content: "";
-            width: 40px;
-            border-bottom: solid 3px abstracts.$green;
+            width: 2.5rem;
+            border-bottom: solid 0.1875rem abstracts.$green;
             display: block;
-            margin-top: 10px;
+            margin-top: 0.625rem;
         }
     }
     

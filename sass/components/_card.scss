@@ -6,17 +6,17 @@
     width: 100%;
     height: 15.6875rem;
     position: relative;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px 0px #0000001A;
+    border-radius: 0.9375rem;
+    box-shadow: 0rem 0.25rem 0.9375rem 0rem #0000001A;
     &__tag{
-        padding: 9px 6px;
+        padding: 0.5625rem 0.375rem;
         background: abstracts.$green;
         color:  abstracts.$green-font;
         position: absolute;
-        right: 12px;
-        top: 13px;
-        font-size: 14px;
-        padding: 6px 12.5px;
+        right: 0.75rem;
+        top: 0.8125rem;
+        font-size: 0.875rem;
+        padding: 0.375rem 0.7813rem;
 
     }
     &__img{
@@ -24,10 +24,10 @@
         height: 10.875rem;
         width: 100%;
         & img{
-            height: 231px;
+            height: 14.4375rem;
             width: 100%;
             position: absolute;
-            top: -57px;
+            top: -3.5625rem;
             object-fit: cover;
         }
     }
