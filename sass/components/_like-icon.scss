@@ -18,7 +18,7 @@
         opacity: 0;
         transition: all 400ms;
     }
-    &:hover {
+    &:hover, &:focus {
         &::after{
             opacity: 1;
         }

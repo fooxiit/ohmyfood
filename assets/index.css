@@ -237,11 +237,11 @@ footer .footer__link-list li i {
 .item__price {
   justify-content: end;
 }
-.item:hover .item__selected {
+.item:hover .item__selected, .item:focus .item__selected {
   width: 3.6875rem;
   transition: all 250ms;
 }
-.item:hover .item__price {
+.item:hover .item__price, .item:focus .item__price {
   margin-right: 3.75rem;
   transition: all 250ms;
 }
@@ -287,7 +287,7 @@ footer .footer__link-list li i {
   opacity: 0;
   transition: all 400ms;
 }
-.like-icon:hover::after {
+.like-icon:hover::after, .like-icon:focus::after {
   opacity: 1;
 }
 

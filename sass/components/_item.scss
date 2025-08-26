@@ -33,7 +33,7 @@
     &__price{
         justify-content: end;
     }
-    &:hover{
+    &:hover , &:focus{
         & .item__selected{
             width: 3.6875rem;
             transition: all 250ms;
