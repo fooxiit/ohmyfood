@@ -294,7 +294,7 @@ footer .footer__link-list li i {
 @property --avanced {
   syntax: "<percentage>";
   inherits: false;
-  initial-value: 97%;
+  initial-value: 100%;
 }
 @property --avanced-reverse {
   syntax: "<percentage>";
@@ -310,7 +310,7 @@ footer .footer__link-list li i {
   z-index: 2;
   background: white;
   flex-wrap: wrap;
-  animation: loading-fadeout 3s forwards;
+  animation: loading-fadeout 1s 4s forwards;
   align-content: center;
   padding: 0.625rem;
 }
@@ -334,14 +334,15 @@ footer .footer__link-list li i {
 
 .animation-warpper {
   height: 0;
+  opacity: 0;
   overflow: hidden;
   animation: show-animation 0s forwards;
-  animation-delay: 3s;
+  animation-delay: 3.5s;
 }
 
 @keyframes loading-animation {
   from {
-    --avanced: 97% ;
+    --avanced: 100% ;
   }
   to {
     --avanced: 0% ;
@@ -350,16 +351,20 @@ footer .footer__link-list li i {
 @keyframes loading-fadeout {
   from {
     display: inherit;
+    opacity: 1;
   }
   to {
     display: none;
+    opacity: 0;
   }
 }
 @keyframes show-animation {
   from {
+    opacity: 0;
     height: 0;
   }
   to {
+    opacity: 1;
     height: 100%;
   }
 }
@@ -415,7 +420,7 @@ footer .footer__link-list li i {
 .how-to-use__steps {
   gap: 1.5625rem;
 }
-@media screen and (min-width: 59.375rem) {
+@media screen and (min-width: 60rem) {
   .how-to-use__steps {
     flex-direction: row;
   }

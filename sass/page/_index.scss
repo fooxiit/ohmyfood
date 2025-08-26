@@ -42,7 +42,7 @@
     }
     &__steps{
         gap: 1.5625rem;
-        @media screen and (min-width: 59.375rem) {
+        @media screen and (min-width: 60rem) {
             flex-direction: row;
         }
         & :last-child {

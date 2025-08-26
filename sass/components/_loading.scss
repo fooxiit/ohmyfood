@@ -2,7 +2,7 @@
 @property --avanced{
     syntax: "<percentage>";
     inherits: false;
-    initial-value: 97%;
+    initial-value: 100%;
 }@property --avanced-reverse{
     syntax: "<percentage>";
     inherits: false;
@@ -17,7 +17,7 @@
     z-index: 2;
     background: white;
     flex-wrap: wrap;
-    animation: loading-fadeout 3s forwards;
+    animation: loading-fadeout 1s 4s forwards;
     align-content: center;
     padding: 0.625rem;
     & span{
@@ -42,16 +42,17 @@
 
 .animation-warpper{
     height: 0;
+    opacity: 0;
     overflow: hidden;
     animation: show-animation 0s forwards;
-    animation-delay: 3s ;
+    animation-delay: 3.5s ;
     
 }
 
 
 @keyframes loading-animation {
     from{
-        --avanced : 97%
+        --avanced : 100%
     }
     to{
         --avanced : 0%
@@ -60,19 +61,22 @@
 
 @keyframes loading-fadeout {
     from{
-        display: inherit; 
-        
+        display: inherit;
+        opacity: 1;     
     }
     to{
-        display: none; 
+        display: none;
+        opacity: 0; 
     }
 }
 
 @keyframes show-animation {
     from{
-        height: 0; 
+        opacity: 0;
+        height: 0;
     }
     to{
+        opacity: 1;
         height: 100%;
     }
 }
