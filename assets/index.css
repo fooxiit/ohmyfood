@@ -238,20 +238,23 @@ footer .footer__link-list li i {
   justify-content: end;
 }
 .item:hover .item__selected, .item:focus .item__selected {
-  width: 3.6875rem;
+  transform: translateX(0);
   transition: all 250ms;
+  visibility: inherit;
 }
 .item:hover .item__price, .item:focus .item__price {
   margin-right: 3.75rem;
   transition: all 250ms;
 }
 .item__selected {
+  visibility: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0rem;
   width: 0%;
-  /* width: 3.6875rem; */
+  width: 3.6875rem;
+  transform: translateX(3.69rem);
   background: #99E2D0;
   overflow: hidden;
   border-radius: 0 0.9375rem 0.9375rem 0;
