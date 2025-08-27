@@ -299,11 +299,6 @@ footer .footer__link-list li i {
   inherits: false;
   initial-value: 100%;
 }
-@property --avanced-reverse {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
 .loading {
   position: absolute;
   top: 0;
@@ -317,22 +312,16 @@ footer .footer__link-list li i {
   align-content: center;
   padding: 0.625rem;
 }
-.loading span {
-  width: 100%;
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: lighter;
-}
 .loading__logo {
   animation: loading-animation ease-out 3.5s forwards;
+  background-image: linear-gradient(to left, transparent var(--avanced), #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
   width: 100%;
   text-align: center;
   font-family: Shrikhand;
   font-size: 3.125rem;
   font-weight: bold;
   color: transparent;
-  background-image: linear-gradient(to left, transparent var(--avanced), #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
 }
 
 .animation-warpper {
