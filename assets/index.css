@@ -405,6 +405,11 @@ footer .footer__link-list li i {
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   background: white;
 }
+@media screen and (min-width: 62.5rem) {
+  .how-to-use {
+    padding: 2.6875rem 4.5% 1.8125rem 4.5%;
+  }
+}
 .how-to-use h2 {
   font-weight: bold;
   margin-bottom: 1.625rem;
@@ -449,7 +454,7 @@ footer .footer__link-list li i {
   margin-right: 1.25rem;
   color: #7E7E7E;
 }
-.how-to-use__steps__step h4 {
+.how-to-use__steps__step h3 {
   font-size: 1rem;
   display: inline;
 }
@@ -460,7 +465,7 @@ footer .footer__link-list li i {
 }
 @media screen and (min-width: 62.5rem) {
   .restaurants {
-    padding: 2.6875rem 12.5% 1.8125rem 12.5%;
+    padding: 2.6875rem 4.5% 1.8125rem 4.5%;
   }
 }
 .restaurants h2 {
