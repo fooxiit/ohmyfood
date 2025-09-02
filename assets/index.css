@@ -242,6 +242,9 @@ footer .footer__link-list li i {
   transition: all 250ms;
   visibility: inherit;
 }
+.item:hover .item__selected i, .item:focus .item__selected i {
+  animation: rotate 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 300ms forwards;
+}
 .item:hover .item__price, .item:focus .item__price {
   margin-right: 3.75rem;
   transition: all 250ms;
@@ -267,8 +270,20 @@ footer .footer__link-list li i {
   height: 1.25rem;
   border-radius: 50%;
   background: white;
+  transform-origin: center;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0turn);
+  }
+  50% {
+    transform: rotate(-0.1turn);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
+}
 .like-icon {
   position: relative;
   height: 1.3125rem;

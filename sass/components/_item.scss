@@ -37,7 +37,10 @@
         & .item__selected{
             transform: translateX(0);
             transition: all 250ms;
-           visibility: inherit;
+            visibility: inherit;
+            & i{
+                animation: rotate 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 300ms forwards;
+            }
         }
         & .item__price{
             margin-right: 3.75rem;
@@ -64,8 +67,22 @@
             height: 1.25rem;
             border-radius: 50%;
             background: white;
+            transform-origin: center;
         }
     }
 
+}
+
+@keyframes rotate {
+    0%  {
+        transform: rotate(0turn);  
+    };
+    50%{
+        transform: rotate(-0.1turn);
+    }
+    100%{
+        transform: rotate(0turn)
+        
+    };
 }
 
