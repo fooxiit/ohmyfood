@@ -422,7 +422,7 @@ footer .footer__link-list li i {
 }
 @media screen and (min-width: 62.5rem) {
   .how-to-use {
-    padding: 2.6875rem 4.5% 1.8125rem 4.5%;
+    padding: 2.6875rem 4% 1.8125rem 4%;
   }
 }
 .how-to-use h2 {
@@ -480,7 +480,7 @@ footer .footer__link-list li i {
 }
 @media screen and (min-width: 62.5rem) {
   .restaurants {
-    padding: 2.6875rem 4.5% 1.8125rem 4.5%;
+    padding: 2.6875rem 4% 1.8125rem 4%;
   }
 }
 .restaurants h2 {
