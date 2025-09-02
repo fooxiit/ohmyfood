@@ -286,7 +286,7 @@ footer .footer__link-list li i {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../../assets/img/icon/Like.svg);
+  background-image: url(./../assets/img/icon/Like.svg);
   opacity: 0;
   transition: all 400ms;
 }
